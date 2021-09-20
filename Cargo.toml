@@ -1,0 +1,15 @@
+[package]
+name = "advices-api"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+axum = "0.2.5"
+tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = "0.2"
+tower = { version = "0.4", features = ["util", "timeout"] }
+tower-http = { version = "0.1", features = ["add-extension", "trace"] }
+serde = { version = "1.0", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json"] }
+anyhow = "1.0.44"
